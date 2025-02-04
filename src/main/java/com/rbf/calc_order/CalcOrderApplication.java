@@ -20,10 +20,10 @@ public class CalcOrderApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Order order = new Order(2282, 800.0, 10.0);
+		Order order = new Order(1309, 95.90, 0.0);
 		System.out.printf("""
-				Pedido código: %d
-				Valor total: %.2f
+				Pedido código %d
+				Valor total: R$ %.2f
 				""", order.getCode(), orderService.totalOrder(order));
 	}
 
